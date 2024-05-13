@@ -1,0 +1,24 @@
+## Dependeica a serem instaladas no projeto
+allure-behave
+allure-python-commons
+behave
+behave-html-formatter
+faker
+idna
+parse
+parse-type
+pip
+pluggy
+pycparser
+PySocks
+python-dateutil
+pytz
+selenium
+webdriver-manager
+setuptools
+six
+sniffio
+trio
+trio-websocket
+typing_extensions
+urllib3
