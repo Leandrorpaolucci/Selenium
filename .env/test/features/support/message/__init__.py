@@ -1,0 +1,1 @@
+MENSAGEM_PESQUISA = "Qual a temperatura de hoje em São Paulo"

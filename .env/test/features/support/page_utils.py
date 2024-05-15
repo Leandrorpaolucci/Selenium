@@ -3,7 +3,8 @@ import unittest, base64, time, os, subprocess, pytz, allure, json, urllib3, beha
 
 from behave import *
 from selenium import webdriver
-from ..support.ambiente import *
+from features.support.ambiente import *
+from selenium.webdriver.common.by import By
 
 
 class PageUtils(unittest.TestCase):
@@ -23,5 +24,12 @@ class PageUtils(unittest.TestCase):
         
     def exit_browser(context):
         context.driver.quit()
+        
+    def clicar_elemento_pagina(context, caixa_pesquisa_google):
+        context.driver.find_element(By.XPATH, caixa_pesquisa_google).click()
+        
+    def inserir_dados_no_elemento(context, insert, texto):
+        context.driver.find_element(By.XPATH, insert).send_keys(texto)
+        
     
     
